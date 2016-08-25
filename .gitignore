@@ -1,0 +1,8 @@
+coverage.html
+test
+*.run
+*.out
+*.iml
+.idea
+.DS_Store
+glrest
