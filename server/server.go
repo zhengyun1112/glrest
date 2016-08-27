@@ -18,7 +18,6 @@ type RawHandler func(w http.ResponseWriter, r *http.Request, pathParam Params)
 type Server struct {
 	srv         *graceful.Server
 	router      *httprouter.Router
-	namedRoutes map[string]string
 	controllers []Controller
 	jsonWares   []JsonMiddleware
 	preWares    []PreMiddleware
