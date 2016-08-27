@@ -4,7 +4,7 @@ import "github.com/zhengyun1112/glrest/logger"
 
 type Controller interface {
 	RegisterRoutes()
-	setServer(s *Server)
+	SetServer(s *Server)
 }
 
 type BaseController struct {
@@ -17,7 +17,7 @@ func (c *BaseController) RegisterRoutes() {
 	logger.Panic("Not implemented")
 }
 
-func (c *BaseController) setServer(s *Server) {
+func (c *BaseController) SetServer(s *Server) {
 	c.s = s
 }
 

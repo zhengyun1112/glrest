@@ -44,7 +44,7 @@ func (s *Server) Run(addr string) error {
 
 func (s *Server) AddController(c Controller) {
 	s.controllers = append(s.controllers, c)
-	c.setServer(s)
+	c.SetServer(s)
 	c.RegisterRoutes()
 }
 
